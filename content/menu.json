@@ -1,0 +1,283 @@
+{
+  "_note": "Menu, transcribed from the client's printed menu (email 'Navarino menu', 2026-10-26; photos in assets/raw/email-2026-10-26/menu). Handwritten corrections on those pages are applied (Greek salad, squid instead of fries in the seafood platter, no fries in the meat platter, beef steak 18,00). '*' is printed on the menu as is; its footnote was not in the photos. price: a number, or a list of numbers for 'single/double' or '2/4 persons'; null = hidden. photo: optional, a photo id that really shows this dish.",
+  "categories": [
+    {
+      "id": "breakfast",
+      "el": "Πρωινό",
+      "en": "Breakfast",
+      "photo": null,
+      "items": [
+        { "el": "Τοστ κλασικό", "en": "Classic toast", "descEl": "ζαμπόν ή γαλοπούλα - τυρί", "descEn": "ham or turkey - cheese", "price": 4 },
+        { "el": "Τορτίγια αλμυρή", "en": "Tortilla salty", "descEl": "cocktail σως - ελιές - αυγό - γαλοπούλα - τυρί - μαρούλι", "descEn": "cocktail sauce - olives - egg - turkey - cheese - lettuce", "price": 5.5 },
+        { "el": "Τορτίγια γλυκιά", "en": "Tortilla sweet", "descEl": "ταχίνι πορτοκαλιού - μπανάνα - πραλίνα - τριμμένο μπισκότο", "descEn": "orange tahini - banana - praline - crushed biscuit", "price": 5.5 },
+        { "el": "Ομελέτα", "en": "Omelette", "descEl": "τυρί - μπέικον - ντομάτα", "descEn": "cheese - bacon - tomato", "price": 7 },
+        { "el": "Αυγά μάτια", "en": "Fried eggs", "descEl": "2 με χωριάτικο ψωμί", "descEn": "2 eggs with rustic bread", "price": 6 },
+        { "el": "Τηγανίτες με μέλι", "en": "Pancakes with honey", "descEl": "μέλι - κανέλα - καρύδι τριμμένο", "descEn": "honey - cinnamon - grated walnut", "price": 7 },
+        { "el": "Τηγανίτες με σοκολάτα", "en": "Pancakes with chocolate", "descEl": "ρευστή σοκολάτα (γάλακτος, Λίλα, λευκή)", "descEn": "liquid chocolate (milk, Milka, white)", "price": 7 }
+      ]
+    },
+    {
+      "id": "appetizers",
+      "el": "Ορεκτικά",
+      "en": "Appetizers",
+      "photo": null,
+      "items": [
+        { "el": "Γκιουζλεμέδες Μυτιλήνης", "en": "Mytilene's giouzlemedes", "descEl": "ζύμη γιαουρτιού & ούζου, λευκό & κίτρινο τυρί, πατάτα, δυόσμος", "descEn": "yogurt & ouzo dough, white & yellow cheese, potato, spearmint", "price": 9 },
+        { "el": "Γαύρος μαρινάτος *", "en": "Marinated anchovies *", "price": 10 },
+        { "el": "Χταπόδι ξυδάτο *", "en": "Vinegared octopus *", "price": 12.5 },
+        { "el": "Σαγανάκι", "en": "Saganaki", "price": 8 },
+        { "el": "Μανιτάρια πλευρώτους ψητά στη σχάρα", "en": "Grilled pleurotus mushrooms", "price": 10 },
+        { "el": "Φέτα με μέλι και μαύρο σουσάμι", "en": "Feta with honey and black sesame", "price": 8 },
+        { "el": "Κοπανιστή", "en": "Spicy cheese salad", "price": 5.5 },
+        { "el": "Τζατζίκι", "en": "Tzatziki", "price": 5 },
+        { "el": "Φάβα χειροποίητη", "en": "Handmade split peas", "price": 8 },
+        { "el": "Πατάτες τηγανητές", "en": "French fries", "price": 4.5 },
+        { "el": "Μύδια αχνιστά *", "en": "Steamed mussels *", "price": 12 },
+        { "el": "Γαρίδες scampi *", "en": "Shrimp scampi *", "price": 16 }
+      ]
+    },
+    {
+      "id": "salads",
+      "el": "Σαλάτες",
+      "en": "Salads",
+      "photo": null,
+      "items": [
+        { "el": "Ναυαρίνο", "en": "Navarino", "descEl": "iceberg - φύλλα σπανάκι - ρόκα - λιαστή ντομάτα - καρύδι - μπαλσάμικο πάστα - τριμμένη παρμεζάνα", "descEn": "iceberg - spinach leaves - arugula - sun-dried tomato - walnut - balsamic paste - grated Parmesan", "price": 11 },
+        { "el": "Σαλάτα εσπεριδοειδών", "en": "Citrus salad", "descEl": "ανάμεικτα φύλλα - πορτοκάλι - ρόδι - καρύδι - κρεμμύδι - φέτα - κόκκινο λάχανο", "descEn": "mixed greens - orange - pomegranate - walnut - onion - feta cheese - red cabbage", "price": 11 },
+        { "el": "Χωριάτικη", "en": "Country-style Greek salad", "price": 10 },
+        { "el": "Χειμερινή", "en": "Winter", "descEl": "λάχανο - καρότο - καυτερή bbq μαγιονέζα - σκόρδο", "descEn": "cabbage - carrot - spicy BBQ mayonnaise - garlic", "price": 9.5 }
+      ]
+    },
+    {
+      "id": "platters",
+      "el": "Ποικιλίες",
+      "en": "Varieties",
+      "photo": null,
+      "items": [
+        { "el": "Ατομικός μεζές ούζου - τσίπουρου", "en": "Individual ouzo - tsipouro meze", "descEl": "ντομάτα, αγγούρι, κίτρινο τυρί, γαύρος μαρινάτος, κοπανιστή, κριτσίνια", "descEn": "tomato, cucumber, yellow cheese, marinated anchovy, spicy cheese salad, breadsticks", "price": 7 },
+        { "el": "Ποικιλία θαλασσινών για 2 - 4 άτομα", "en": "A variety of seafood, for 2 - 4 people", "descEl": "γαύρος, σαρδέλα, γαρίδες Νο2, καλαμαράκια, φάβα", "descEn": "anchovy, sardines, shrimp No. 2, squid, split peas", "price": [30, 60] },
+        { "el": "Ποικιλία κρεατικών για 2 - 4 άτομα", "en": "A variety of meat, for 2 - 4 people", "descEl": "πανσετάκια, μπιφτέκι, λουκάνικο, κοτόπουλο, κοπανιστή", "descEn": "pork chops, burger, sausage, chicken, spicy cheese salad", "price": [24, 48] }
+      ]
+    },
+    {
+      "id": "seafood",
+      "el": "Θαλασσινά",
+      "en": "Seafood",
+      "noteEl": "Κυρίως πιάτα",
+      "noteEn": "Main dishes",
+      "photo": "food/027",
+      "items": [
+        { "el": "Γαύρος τηγανητός", "en": "Fried anchovies", "price": 12 },
+        { "el": "Σαρδέλα ψητή", "en": "Grilled sardines", "price": 12 },
+        { "el": "Μπακαλιάρος σκορδαλιά *", "en": "Cod fish with garlic sauce *", "price": 12 },
+        { "el": "Χταπόδι στη σχάρα * με φάβα", "en": "Grilled octopus * with split peas", "price": 16, "photo": "food/027" },
+        { "el": "Γαρίδες ψητές στη σχάρα *", "en": "Grilled shrimp *", "price": 16 }
+      ]
+    },
+    {
+      "id": "soups",
+      "el": "Σούπες",
+      "en": "Soups",
+      "photo": null,
+      "items": [
+        { "el": "Ψαρόσουπα", "en": "Fish soup", "price": 11 },
+        { "el": "Κρεατόσουπα", "en": "Meat soup", "price": 11 },
+        { "el": "Φασολάδα λεμονάτη Ιωάννας", "en": "Ioanna's lemon-style bean soup", "price": 9 }
+      ]
+    },
+    {
+      "id": "pasta",
+      "el": "Ζυμαρικά",
+      "en": "Pasta",
+      "photo": "food/026",
+      "items": [
+        { "el": "Γαριδομακαρονάδα *", "en": "Shrimp spaghetti *", "price": 16, "photo": "food/026" },
+        { "el": "Καρμπονάρα", "en": "Carbonara", "price": 10 },
+        { "el": "Φύλλα ελιάς", "en": "Olive leaves", "descEl": "με φέτα & σάλτσα καυτερής πάπρικας", "descEn": "with feta cheese & hot paprika sauce", "price": 11 },
+        { "el": "Μακαρόνια με κιμά της γιαγιάς", "en": "Grandma's minced meat spaghetti", "price": 10.5 }
+      ]
+    },
+    {
+      "id": "meat",
+      "el": "Για κρεατοφάγους",
+      "en": "For meat eaters",
+      "photo": null,
+      "items": [
+        { "el": "Κεφτέδες al limone", "en": "Meatballs al limone", "price": 9 },
+        { "el": "Μπιφτέκι στη σχάρα", "en": "Grilled burger", "price": 12 },
+        { "el": "Σταυλίσια μπριζόλα (χοιρινή)", "en": "Stavlisia (thick-cut) pork chop", "price": 19 },
+        { "el": "Χοιρινή μπριζόλα λαιμού", "en": "Pork neck steak", "price": 14 },
+        { "el": "Φιλέτο κοτόπουλο", "en": "Chicken fillet", "price": 11 },
+        { "el": "Λουκάνικο χειροποίητο", "en": "Handmade sausage", "price": 10 },
+        { "el": "Πανσετάκια", "en": "Pork pancetta", "price": 12.5 },
+        { "el": "Μοσχαρίσια μπριζόλα", "en": "Beef steak", "price": 18 }
+      ]
+    },
+    {
+      "id": "sweets",
+      "el": "Γλυκά χειροποίητα",
+      "en": "Handmade sweets",
+      "photo": null,
+      "items": [
+        { "el": "Κάθε μέρα νέο γλυκό χειροποίητο", "en": "A new handmade dessert every day", "price": null }
+      ]
+    },
+    {
+      "id": "coffee",
+      "el": "Καφέδες",
+      "en": "Coffee",
+      "photo": "owner/008",
+      "items": [
+        { "el": "Εσπρέσο / διπλός", "en": "Espresso / double", "price": [2.5, 3.5] },
+        { "el": "Καπουτσίνο / διπλός", "en": "Cappuccino / double", "price": [3.5, 4.5] },
+        { "el": "Εσπρέσο μακιάτο", "en": "Espresso macchiato", "price": 3 },
+        { "el": "Φρέντο εσπρέσο", "en": "Espresso freddo", "price": 3.5 },
+        { "el": "Φρέντο καπουτσίνο", "en": "Cappuccino freddo", "price": 3.8, "photo": "drinks/088" },
+        { "el": "Φρέντο καπουτσίνο Ναυαρίνο", "en": "Cappuccino Navarino freddo", "price": 4.2 },
+        { "el": "Γαλλικός (φίλτρου)", "en": "French (filter)", "price": 3.5 },
+        { "el": "Ελληνικός / διπλός", "en": "Greek / double", "price": [2.5, 3.5] },
+        { "el": "Φραπέ / Νες καφέ", "en": "Frappé / Nes coffee", "price": 3.5 },
+        { "el": "Γεύσεις στον καφέ", "en": "Coffee flavours", "descEl": "φουντούκι, καραμέλα", "descEn": "hazelnut, caramel", "price": 0.6 }
+      ]
+    },
+    {
+      "id": "soft-drinks",
+      "el": "Αναψυκτικά",
+      "en": "Soft drinks",
+      "noteEl": "250 ml",
+      "noteEn": "250 ml",
+      "photo": null,
+      "items": [
+        { "el": "Coca-Cola, Zero, Sprite, Fanta πορτοκάλι, λεμονάδα, σόδα, τόνικ", "en": "Coca-Cola, Zero, Sprite, Fanta orange, lemonade, soda, tonic water", "price": 3 },
+        { "el": "Σουρωτή", "en": "Souroti", "price": 3.5 },
+        { "el": "Νερό μικρό 0,5 lt", "en": "Small bottle of water 0.5 lt", "price": 0.5 },
+        { "el": "Νερό μεγάλο 1 lt", "en": "Big bottle of water 1 lt", "price": 1 }
+      ]
+    },
+    {
+      "id": "juice",
+      "el": "Χυμοί",
+      "en": "Juice",
+      "photo": null,
+      "items": [
+        { "el": "Χειροποίητος πορτοκάλι με λεβάντα", "en": "Handmade orange with lavender", "price": 5 },
+        { "el": "Φυσικός ανάμικτος με φρούτα εποχής", "en": "Natural mixed with seasonal fruits", "price": 6 },
+        { "el": "ΑΜΙΤΑ", "en": "AMITA", "descEl": "πορτοκάλι, λεμόνι, βύσσινο, ροδάκινο, ανανάς", "descEn": "orange, lemon, sour cherry, peach, pineapple", "price": 3.5 },
+        { "el": "ΑΜΙΤΑ MOTION", "en": "AMITA MOTION", "price": 4 }
+      ]
+    },
+    {
+      "id": "tea",
+      "el": "Τσάι",
+      "en": "Tea",
+      "noteEl": "ζεστό ή κρύο",
+      "noteEn": "hot or cold",
+      "photo": null,
+      "items": [
+        { "el": "Λεμόνι - ροδάκινο - πράσινο - κόκκινα φρούτα - μέντα - mohito dream", "en": "Lemon - peach - green - red fruits - mint - mohito dream", "price": 3.8 }
+      ]
+    },
+    {
+      "id": "hot-cold",
+      "el": "Ροφήματα",
+      "en": "Drinks",
+      "noteEl": "ζεστά ή κρύα",
+      "noteEn": "hot or cold",
+      "photo": null,
+      "items": [
+        { "el": "Καϊνάρι Μυτιλήνης", "en": "Kainari Mytilene", "price": 4 },
+        { "el": "Σοκολάτα απλή", "en": "Plain chocolate", "price": 4 },
+        { "el": "Σοκολάτα με γεύσεις", "en": "Flavoured chocolate", "descEl": "βανίλια, μπανάνα, oreo, φράουλα", "descEn": "vanilla, banana, oreo, strawberry", "price": 4.5 }
+      ]
+    },
+    {
+      "id": "ice-cream",
+      "el": "Παγωτά",
+      "en": "Ice cream",
+      "noteEl": "τιμή μπάλας",
+      "noteEn": "price per scoop",
+      "photo": null,
+      "items": [
+        { "el": "Βανίλια - Σοκολάτα - Lila Pause", "en": "Vanilla - Chocolate - Lila Pause", "price": 3 },
+        { "el": "Μαστίχα καταΐφι - Μπισκοτίνο", "en": "Mastic kataifi - Biscotti", "price": 3 },
+        { "el": "Μέντα σοκολάτα - Μέλι κυρήθρα", "en": "Chocolate mint - Honey kirithra", "price": 3 },
+        { "el": "Γιαούρτι βύσσινο", "en": "Sour cherry yogurt", "price": 3 },
+        { "el": "Μιλκ σέικ παγωτού", "en": "Ice cream milkshake", "descEl": "βανίλια, μπανάνα, oreo, φράουλα", "descEn": "vanilla, banana, oreo, strawberry", "price": 6.5 }
+      ]
+    },
+    {
+      "id": "beers",
+      "el": "Μπύρες",
+      "en": "Beers",
+      "noteEl": "500 ml",
+      "noteEn": "500 ml",
+      "photo": null,
+      "items": [
+        { "el": "Άλφα", "en": "Alfa", "price": 4 },
+        { "el": "Μάμμος", "en": "Mammos", "price": 4 },
+        { "el": "Μύθος", "en": "Mythos", "price": 4 },
+        { "el": "Φιξ", "en": "Fix", "price": 4 },
+        { "el": "Φιξ χωρίς αλκοόλ", "en": "Fix alcohol-free", "price": 4 },
+        { "el": "Άμστελ", "en": "Amstel", "price": 4 },
+        { "el": "Κάιζερ", "en": "Kaiser", "price": 5 },
+        { "el": "Φίσερ", "en": "Fischer", "price": 5 },
+        { "el": "Χάινεκεν", "en": "Heineken", "price": 5 },
+        { "el": "Κορόνα", "en": "Corona", "price": 5 },
+        { "el": "Μπαντ", "en": "Bud", "price": 5 }
+      ]
+    },
+    {
+      "id": "ouzo",
+      "el": "Ούζο - Τσίπουρο",
+      "en": "Ouzo - Tsipouro",
+      "noteEl": "Πελοποννησιακό",
+      "noteEn": "Peloponnese",
+      "photo": null,
+      "items": [
+        { "el": "Ατομικό 0,50 ml", "en": "Individual 0.50 ml", "price": 3 },
+        { "el": "200 ml εμφιαλωμένο", "en": "200 ml bottled", "price": 8.5 },
+        { "el": "Χύμα τσίπουρο 250 ml", "en": "Bulk tsipouro 250 ml", "price": 8 },
+        { "el": "Χύμα ούζο 250 ml", "en": "Bulk ouzo 250 ml", "price": 8 }
+      ]
+    },
+    {
+      "id": "wine-white",
+      "el": "Κρασί λευκό",
+      "en": "White wine",
+      "noteEl": "Κρασί ετικέτας, Πελοποννησιακός οίνος",
+      "noteEn": "Label wine, Peloponnese",
+      "photo": null,
+      "items": [
+        { "el": "Παπαργυρίου Blanc", "en": "Papargyriou Blanc", "descEl": "μοσχούδι, ασύρτικο, λευκό ξηρό", "descEn": "moschoudi, asyrtiko, dry white", "price": 20 },
+        { "el": "Κτήμα Πυργάκη Μαλαγουζιά", "en": "Pyrgakis Estate Malagouzia", "descEl": "Μαλαγουζιά ξηρός", "descEn": "Malagouzia dry", "price": 18.5 },
+        { "el": "Τσελεπού Μαντίνεια λευκός", "en": "Tselepou Mantineia white", "descEl": "ξηρός, μοσχοφίλερο", "descEn": "dry, moschofilero", "price": 24 },
+        { "el": "Σκούρα Αρμύρα", "en": "Skoura Armyra", "descEl": "ξηρός Chardonnay", "descEn": "dry Chardonnay", "price": 28 }
+      ]
+    },
+    {
+      "id": "wine-rose",
+      "el": "Κρασί ροζέ",
+      "en": "Rosé wine",
+      "noteEl": "Κρασί ετικέτας, Πελοποννησιακός οίνος",
+      "noteEn": "Label wine, Peloponnese",
+      "photo": null,
+      "items": [
+        { "el": "Παπαργυρίου ροζέ ξηρός", "en": "Papargyriou dry rosé", "descEl": "μαυροδάφνη, merlot, ασύρτικο, μοσχοφίλερο", "descEn": "mavrodaphne, merlot, asyrtiko, moschofilero", "price": 21 },
+        { "el": "Μπαραφάκα 3 μάγισσες", "en": "Barafaka 3 magisses", "descEl": "ημίξηρος, syrah, μοσχοφίλερο", "descEn": "semi-dry, syrah, moschofilero", "price": 24 },
+        { "el": "Τσελεπού Δρυόπη", "en": "Tselepou Dryopi", "descEl": "ξηρός, αγιωργίτικο", "descEn": "dry, agiorgitiko", "price": 26 }
+      ]
+    },
+    {
+      "id": "wine-red",
+      "el": "Κρασί κόκκινο",
+      "en": "Red wine",
+      "noteEl": "Κρασί ετικέτας, Πελοποννησιακός οίνος",
+      "noteEn": "Label wine, Peloponnese",
+      "photo": null,
+      "items": [
+        { "el": "Μέγα Σπήλαιο (Μαύρο Καλαβρύτων)", "en": "Mega Spilaio (Black Kalavryta)", "descEl": "merlot, ξηρός", "descEn": "merlot, dry", "price": 24 },
+        { "el": "Σκούρα Άκρες", "en": "Skoura Akres", "descEl": "αγιωργίτικο, cabernet, sauvignon", "descEn": "agiorgitiko, cabernet, sauvignon", "price": 23 }
+      ]
+    }
+  ]
+}

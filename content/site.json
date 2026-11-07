@@ -1,0 +1,31 @@
+{
+  "_note": "Business facts. Edit here only; every page reads this file. Values come from the client brief (2026-10-01). Anything unconfirmed is null and listed in README.md under TODO.",
+  "name": { "el": "Ναυαρίνο", "en": "Navarino" },
+  "phone": { "display": "27430 28887", "tel": "+302743028887" },
+  "address": {
+    "el": { "street": "Πατρών 108", "city": "Ξυλόκαστρο", "postcode": "204 00", "note": "στην παραλία, γωνία με Αριστοναυτών" },
+    "en": { "street": "Patron 108", "city": "Xylokastro", "postcode": "204 00", "note": "on the beach, at the corner of Aristonafton St" },
+    "region": "Κορινθία",
+    "country": "GR"
+  },
+  "geo": {
+    "lat": 38.0813,
+    "lng": 22.621,
+    "_note": "APPROXIMATE: OpenStreetMap position of Αριστοναυτών street. Confirm with the owner's Google Maps pin (README TODO)."
+  },
+  "hours": { "opens": "09:30", "closes": "23:30", "days": "daily" },
+  "facebook": "https://www.facebook.com/profile.php?id=61584620066000",
+  "instagram": null,
+  "email": null,
+  "domain": null,
+  "maps": {
+    "google": "https://www.google.com/maps/search/?api=1&query=%CE%9D%CE%B1%CF%85%CE%B1%CF%81%CE%AF%CE%BD%CE%BF%2C%20%CE%A0%CE%B1%CF%84%CF%81%CF%8E%CE%BD%20108%2C%20%CE%9E%CF%85%CE%BB%CF%8C%CE%BA%CE%B1%CF%83%CF%84%CF%81%CE%BF%20204%2000",
+    "apple": "https://maps.apple.com/?q=%CE%9D%CE%B1%CF%85%CE%B1%CF%81%CE%AF%CE%BD%CE%BF&address=%CE%A0%CE%B1%CF%84%CF%81%CF%8E%CE%BD%20108%2C%20%CE%9E%CF%85%CE%BB%CF%8C%CE%BA%CE%B1%CF%83%CF%84%CF%81%CE%BF%20204%2000%2C%20Greece"
+  },
+  "tripadvisor": {
+    "url": "https://www.tripadvisor.com/Restaurant_Review-g651975-d3571962-Reviews-Navarino-Xylokastro_Corinthia_Region_Peloponnese.html",
+    "rating": 4.7,
+    "count": 179
+  },
+  "credit": { "label": "Website by DIFRESH" }
+}

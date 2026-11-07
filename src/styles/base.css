@@ -1,0 +1,214 @@
+/* Base: reset, type, buttons, shared layout. Mobile first; desktop is the variation. */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; }
+img, picture, video, canvas, svg { display: block; max-width: 100%; }
+img { height: auto; }
+button, input { font: inherit; color: inherit; }
+h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+ul[role="list"], ol[role="list"] { list-style: none; padding: 0; }
+/* Effects toggle the hidden attribute (menu panels, label sets); no
+   component display rule may beat it. */
+[hidden] { display: none !important; }
+
+html {
+  background: var(--ink);
+  /* clip, not hidden: hidden makes body a scroller and breaks sticky/pins. */
+  overflow-x: clip;
+}
+body {
+  min-height: 100svh;
+  overflow-x: clip;
+  background: var(--fx-bg);
+  color: var(--fx-fg);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.65;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+}
+
+/* ---------- Lenis ---------- */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* ---------- Type ---------- */
+.display, h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: -0.015em;
+  /* Greek τόνοι sit above the ascender. Anything under ~1.05 gets them
+     clipped by the masked-headline reveal. */
+  line-height: 1.08;
+  text-wrap: balance;
+}
+h2 { font-size: var(--step-3); }
+h3 { font-size: var(--step-2); }
+.italic { font-style: italic; }
+p { text-wrap: pretty; }
+.lede { font-size: var(--step-1); line-height: 1.55; max-width: var(--measure); }
+.prose { max-width: var(--measure); }
+.prose > * + * { margin-top: 1em; }
+.muted { color: var(--fx-muted); }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 0.75em;
+  font-family: var(--font-body); font-size: var(--step--1); font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--fx-muted);
+}
+.eyebrow::before { content: ""; width: 2.25em; height: 1px; background: currentColor; opacity: 0.6; }
+
+.hand { font-family: var(--font-hand); font-weight: 400; letter-spacing: 0; }
+.time {
+  font-family: var(--font-display); font-style: italic; font-weight: 300;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+a { color: inherit; text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+.link {
+  text-decoration: none;
+  background: linear-gradient(currentColor, currentColor) no-repeat 0 100% / 100% 1px;
+  transition: background-size var(--dur) var(--ease-out);
+  padding-bottom: 0.1em;
+}
+@media (hover: hover) and (pointer: fine) {
+  .link:hover { background-size: 0% 1px; background-position: 100% 100%; }
+}
+
+/* ---------- Focus & a11y ---------- */
+:focus-visible {
+  outline: 2px solid var(--sea-glow);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+[data-ground="day"] :focus-visible { outline-color: var(--aegean); }
+.sr-only {
+  position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.skip {
+  position: fixed; left: 1rem; top: 1rem; z-index: calc(var(--z-preloader) + 1);
+  padding: 0.75rem 1.25rem; border-radius: 999px; background: var(--whitewash); color: var(--ink);
+  font-weight: 600; text-decoration: none; transform: translateY(-200%);
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+.skip:focus-visible { transform: none; }
+
+/* ---------- Layout ---------- */
+.wrap { width: 100%; max-width: 92rem; margin-inline: auto; padding-inline: var(--gutter); }
+.section { position: relative; padding-block: var(--section); }
+/* Below-the-fold sections: the first layout of this long page only covers
+   what is near the screen. `auto` makes the browser remember each section's
+   real size once it has rendered, so scrolling back never jumps. */
+main > .section:not(#top):not(.menu-hero) { content-visibility: auto; contain-intrinsic-size: auto 1100px; }
+.stack > * + * { margin-top: var(--stack, 1.25rem); }
+
+/* Section grounds. The colour-shift effect animates the page colour from these
+   values; without JS (html:not(.js)) each section paints its own ground, so
+   the page reads correctly with no script at all. */
+[data-ground] { --g-bg: var(--whitewash); --g-fg: var(--on-day); --g-muted: var(--on-day-muted); }
+[data-ground="day"] { --g-bg: var(--whitewash); --g-fg: var(--on-day); --g-muted: var(--on-day-muted); }
+[data-ground="mint"] { --g-bg: var(--mint); --g-fg: var(--on-day); --g-muted: #36453f; }
+[data-ground="night"] { --g-bg: var(--ink); --g-fg: var(--on-night); --g-muted: var(--on-night-muted); }
+[data-ground="emerald"] { --g-bg: var(--emerald); --g-fg: var(--on-night); --g-muted: var(--on-night-muted); }
+/* Without JS each section paints its own ground and text. With JS the page
+   colour morphs, and text follows the SAME morphing tokens, so text and
+   ground can never disagree (a section not yet reached has the current
+   page's colours, not its own text on someone else's ground). */
+html:not(.js) [data-ground] { background: var(--g-bg); color: var(--g-fg); --fx-muted: var(--g-muted); }
+html.js [data-ground] { background: transparent; color: var(--fx-fg); }
+
+/* ---------- Buttons ---------- */
+.btn {
+  --fx: 50%; --fy: 50%;
+  position: relative; isolation: isolate; overflow: hidden;
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.6em;
+  min-height: 48px; padding: 0.85em 1.6em;
+  border-radius: 999px; border: 1px solid currentColor;
+  font-family: var(--font-body); font-size: 1rem; font-weight: 600; letter-spacing: 0.01em;
+  line-height: 1.2; text-decoration: none; white-space: nowrap;
+  color: inherit; background: transparent; cursor: pointer;
+  transition: color var(--dur) var(--ease-out), border-color var(--dur) var(--ease-out);
+  touch-action: manipulation;
+}
+/* fill-button: the colour floods out from wherever the pointer came in. */
+.btn::before {
+  content: ""; position: absolute; z-index: -1; left: var(--fx); top: var(--fy);
+  width: 250%; aspect-ratio: 1; border-radius: 50%; background: var(--btn-flood, currentColor);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.65s var(--ease-in-out);
+}
+.btn:active { transform: scale(0.98); }
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover::before { transform: translate(-50%, -50%) scale(1); }
+}
+.btn:focus-visible::before { transform: translate(-50%, -50%) scale(1); }
+
+.btn--ghost { --btn-flood: var(--fx-fg); }
+@media (hover: hover) and (pointer: fine) { .btn--ghost:hover { color: var(--fx-bg); } }
+.btn--ghost:focus-visible { color: var(--fx-bg); }
+
+/* The single coral CTA. Labels are 18px/600 because white on coral is 4.48:1
+   (large-text AA). The flood is ink, so contrast only goes up on hover. */
+.btn--coral {
+  --btn-flood: var(--ink);
+  background: var(--coral); border-color: var(--coral); color: #fff;
+  font-size: 1.125rem;
+}
+.btn--coral:active { background: var(--coral-press); }
+.btn__label { position: relative; display: inline-block; will-change: transform; }
+.btn svg { width: 1.1em; height: 1.1em; flex: none; }
+
+/* ---------- Media ---------- */
+.ph { position: relative; overflow: hidden; background: var(--ph, transparent); }
+.ph > picture, .ph img { width: 100%; height: 100%; }
+.ph img { object-fit: cover; }
+.ph--round { border-radius: var(--fx-radius); }
+.ph--arch { border-radius: 999px 999px var(--fx-radius) var(--fx-radius); }
+figcaption, .caption {
+  margin-top: 0.75rem; font-size: var(--step--1); color: var(--fx-muted); line-height: 1.5;
+}
+.caption--hand { font-family: var(--font-hand); font-size: 1.05rem; color: inherit; opacity: 0.85; }
+
+/* ---------- Texture ---------- */
+.grain {
+  position: fixed; inset: -50%; width: 200%; height: 200%; pointer-events: none;
+  z-index: calc(var(--z-header) - 1); opacity: 0.05; mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+html.is-night .grain { mix-blend-mode: screen; opacity: 0.035; }
+
+/* Soft watercolour edge, the logo's own wash language: a blurred, displaced
+   band of the next section's ground. Purely decorative. */
+.wash {
+  position: absolute; left: -5%; right: -5%; height: clamp(4rem, 10vw, 9rem);
+  pointer-events: none; z-index: 0; color: var(--wash, var(--mint)); opacity: 0.55;
+}
+.wash svg { width: 100%; height: 100%; }
+.wash--top { top: 0; transform: translateY(-55%); }
+.wash--bottom { bottom: 0; transform: translateY(55%) scaleY(-1); }
+
+/* ---------- Pre-hidden states for JS reveals (never without html.js) ---------- */
+/* Hero: hidden only while a preloader will cover it (first visit this
+   session); a returning visitor sees it as static text at once. */
+html.js:not(.reduced-motion):not([data-intro="skip"]) [data-fx="masked-headline"][data-trigger="load"] { visibility: hidden; }
+html.js:not(.reduced-motion):not([data-intro="skip"]) .hero [data-fx="fade-up"]:not([data-stagger]),
+html.js:not(.reduced-motion):not([data-intro="skip"]) .hero [data-fx="fade-up"][data-stagger] > * { opacity: 0; }
+/* Everything else: pre-hidden only once the motion engine has started
+   (html.fx-ready). It loads after the page, so until then the content is
+   plainly visible and a fast scroll never meets a missing heading. */
+html.fx-ready:not(.reduced-motion) [data-fx="masked-headline"]:not([data-trigger="load"]) { visibility: hidden; }
+html.fx-ready:not(.reduced-motion) [data-fx="clip-reveal"] { clip-path: inset(100% 0 0 0); }
+html.fx-ready:not(.reduced-motion) main > :not(.hero) [data-fx="fade-up"]:not([data-stagger]) { opacity: 0; transform: translateY(32px); }
+html.fx-ready:not(.reduced-motion) main > :not(.hero) [data-fx="fade-up"][data-stagger] > * { opacity: 0; transform: translateY(32px); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+html.reduced-motion [data-fx] { visibility: visible !important; opacity: 1 !important; transform: none !important; clip-path: none !important; }

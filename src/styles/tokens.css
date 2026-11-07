@@ -1,0 +1,72 @@
+/* Design tokens. Every colour is sampled from the venue's own photos and logo;
+   see design/DESIGN.md for where each one came from and its contrast pairs.
+   Do not add a colour that is not here. */
+
+:root {
+  /* Day */
+  --whitewash: #f6f4ee;
+  --mint: #b9d2c6;
+  --aegean: #2e6db4;       /* fill, and text >= 18px only (4.82:1 on whitewash) */
+  --aegean-deep: #25578f;  /* body-size links on day sections (6.73:1) */
+  --gulf: #2f8297;         /* decorative / large type only */
+  --rattan: #b08f5f;       /* hairlines */
+  --coral: #c4552f;        /* THE accent. CTA surface, labels >= 18px/600 */
+  --coral-press: #b04a1e;
+  --fuchsia: #b03a6e;      /* one dot per screen at most */
+
+  /* Night */
+  --ink: #08191a;
+  --emerald: #0f4a33;
+  --sea-glow: #2cd779;
+  --moon: #f2b35e;
+  --moon-halo: #f9ebb2;
+
+  /* Text on each ground */
+  --on-day: #08191a;
+  --on-day-muted: #4b5a55; /* 6.9:1 on whitewash */
+  --on-night: #f6f4ee;
+  --on-night-muted: #b7c4bd; /* 10.6:1 on ink, 6.9:1 on emerald */
+
+  /* Page colour, morphed per section by the colour-shift effect */
+  --fx-bg: var(--ink);
+  --fx-fg: var(--on-night);
+  --fx-muted: var(--on-night-muted);
+  --fx-accent: var(--coral);
+  --fx-line: color-mix(in srgb, var(--fx-fg) 22%, transparent);
+  --fx-radius: 14px;
+
+  /* Type */
+  --font-display: "Noto Serif Display", "Noto Serif", Georgia, serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-hand: "Mynerve", "Manrope", cursive;
+
+  --step--1: clamp(0.875rem, 0.84rem + 0.15vw, 0.95rem);
+  --step-0: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.45vw, 1.45rem);
+  --step-2: clamp(1.5rem, 1.25rem + 1.1vw, 2.2rem);
+  --step-3: clamp(2.1rem, 1.5rem + 2.8vw, 4.4rem);
+  --step-4: clamp(3rem, 1.6rem + 6.5vw, 8rem);
+  --step-hero: clamp(3.6rem, 1.2rem + 11.5vw, 12rem);
+
+  /* Space (8pt rhythm, spacious) */
+  --gutter: clamp(1rem, 0.4rem + 3vw, 4rem);
+  --section: clamp(5rem, 3rem + 9vw, 11rem);
+  --measure: 34rem;
+
+  /* Motion: one language (luxury-web-animations) */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+  --dur-fast: 0.2s;
+  --dur: 0.6s;
+  --dur-slow: 1.2s;
+
+  /* Layers */
+  --z-content: 1;
+  --z-header: 50;
+  --z-nav: 60;
+  --z-lightbox: 70;
+  --z-trail: 80;
+  --z-preloader: 100;
+
+  --header-h: 4.5rem;
+}

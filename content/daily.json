@@ -1,0 +1,6 @@
+{
+  "_note": "Πιάτο ημέρας. Change the dish here and rebuild. price is optional: leave it null to hide it.",
+  "el": { "name": "Παστίτσιο", "note": "μαγειρεμένο σήμερα" },
+  "en": { "name": "Pastitsio", "note": "cooked today" },
+  "price": null
+}

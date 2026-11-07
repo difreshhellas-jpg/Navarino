@@ -1,0 +1,324 @@
+{
+  "_note": "Alt text for every photo the site shows, both languages. Keys are folder/number as in assets/raw/navarino-facebook. gallery = the order of the gallery section.",
+  "alt": {
+    "night/128": {
+      "el": "Το φεγγάρι βγαίνει πάνω από τη σμαραγδένια θάλασσα, μπροστά στα στρωμένα τραπέζια",
+      "en": "The moon rising over the emerald sea beyond the set tables"
+    },
+    "night/131": {
+      "el": "Το φεγγάρι και η αντανάκλασή του στη θάλασσα τη νύχτα",
+      "en": "The moon and its reflection on the night sea"
+    },
+    "night/124": {
+      "el": "Το φεγγάρι πάνω από τη θάλασσα που φωτίζεται πράσινη",
+      "en": "The moon above the green-lit sea"
+    },
+    "night/014": {
+      "el": "Το νερό λάμπει πράσινο από τα υποβρύχια φώτα",
+      "en": "Water glowing green from the underwater lights"
+    },
+    "night/117": {
+      "el": "Τραπέζι με πλακάκια και πορτοκαλί φωτιστικό με κρόσσια, με θέα την ακτή",
+      "en": "A tiled table under a coral fringed lamp, looking out at the shore"
+    },
+    "night/004": {
+      "el": "Η βεράντα τη νύχτα, με γεμάτα τραπέζια και τη θάλασσα πράσινη από κάτω",
+      "en": "The terrace at night, tables full and the sea glowing green below"
+    },
+    "night/016": {
+      "el": "Ζωντανή μουσική στη βεράντα: κιθάρα, φωνή και πλήκτρα",
+      "en": "Live music on the terrace: guitar, voice and keys"
+    },
+    "night/127": {
+      "el": "Ο δρόμος προς το Ναυαρίνο τη νύχτα, με το πράσινο φως της θάλασσας",
+      "en": "The road to Navarino at night, the sea glowing green"
+    },
+    "night/129": {
+      "el": "Ο σκελετός της βάρκας φωτισμένος πορτοκαλί δίπλα στη σμαραγδένια θάλασσα",
+      "en": "The boat's ribs lit orange beside the emerald sea"
+    },
+    "night/031": {
+      "el": "Το φεγγάρι μέσα από την πέργκολα, πάνω από ένα τραπέζι με πλακάκια",
+      "en": "The moon through the pergola, above a tiled table"
+    },
+    "night/055": {
+      "el": "Η κόκκινη βάρκα στα βράχια τη νύχτα, με τα φώτα της ακτής",
+      "en": "The red boat on the rocks at night, the shore lights beyond"
+    },
+    "night/083": {
+      "el": "Η είσοδος τη νύχτα, με τα λουλούδια φωτισμένα",
+      "en": "The entrance at night, its flowers lit up"
+    },
+    "night/100": {
+      "el": "Η βεράντα τη νύχτα με το πράσινο φως μέσα στο νερό",
+      "en": "The terrace at night with green light in the water"
+    },
+    "drinks/126": {
+      "el": "Freddo στο πεζούλι δίπλα σε γλάστρα με βασιλικό, με θέα τη θάλασσα",
+      "en": "A freddo on the ledge beside a pot of basil, facing the sea"
+    },
+    "drinks/023": {
+      "el": "Δίσκος με καφέδες πάνω από την ξύλινη βεράντα",
+      "en": "A tray of coffees carried across the deck"
+    },
+    "drinks/088": {
+      "el": "Freddo cappuccino με αφρόγαλα σε τραπέζι με πλακάκια",
+      "en": "Freddo cappuccino topped with milk foam on a tiled table"
+    },
+    "food/021": {
+      "el": "Κρέπα πραλίνα σε πράσινο πιάτο",
+      "en": "Praline crêpe on a green plate"
+    },
+    "food/027": {
+      "el": "Χταπόδι στα κάρβουνα με δύο μερίδες φάβα και λεμόνι, σε λευκό πιάτο πάνω σε πορτοκαλί τραπεζομάντιλο",
+      "en": "Charcoal-grilled octopus with two rounds of fava and a lemon wedge, on a white plate over an orange tablecloth"
+    },
+    "food/066": {
+      "el": "Κριθαρότο με γαρίδες και λεμόνι σε λευκό πιάτο",
+      "en": "Shrimp orzo with lemon on a white plate"
+    },
+    "food/026": {
+      "el": "Μακαρονάδα με γαρίδες σε μπλε πιάτο, πάνω σε πορτοκαλί τραβέρσα",
+      "en": "Shrimp pasta on a blue plate over an orange table runner"
+    },
+    "food/067": {
+      "el": "Πιάτα με χταπόδι και φάβα στο πάσο της κουζίνας",
+      "en": "Plates of octopus and fava on the kitchen pass"
+    },
+    "food/025": {
+      "el": "Γεμιστές ντομάτες με πατάτες",
+      "en": "Stuffed tomatoes with potatoes"
+    },
+    "food/125": {
+      "el": "Συκώτι στη σχάρα με πράσινη σαλάτα",
+      "en": "Grilled liver with a green salad"
+    },
+    "food/132": {
+      "el": "Σαλάτα ντομάτας σε μακρόστενη πιατέλα",
+      "en": "Tomato salad on a long platter"
+    },
+    "food/092": {
+      "el": "Αρνί ψημένο στον φούρνο με πατάτες",
+      "en": "Lamb roasted in the oven with potatoes"
+    },
+    "venue-day/072": {
+      "el": "Οι σκιές της πέργκολας πάνω στο μπλε πάτωμα της βεράντας",
+      "en": "Pergola shadows striping the blue terrace floor"
+    },
+    "venue-day/029": {
+      "el": "Μαύρη καρέκλα και τραπέζι με πλακάκια στο μπλε πάτωμα, με θέα τη θάλασσα",
+      "en": "A black chair and tiled table on the blue floor, looking out to sea"
+    },
+    "venue-day/121": {
+      "el": "Το γαλάζιο νερό του κόλπου το μεσημέρι, με τα βουνά απέναντι",
+      "en": "The blue water of the gulf at midday, mountains across the bay"
+    },
+    "venue-day/109": {
+      "el": "Η παραλία με τα βότσαλα δίπλα στη βεράντα",
+      "en": "The pebble beach beside the terrace"
+    },
+    "venue-day/001": {
+      "el": "Η βεράντα στο ηλιοβασίλεμα, με τα τραπέζια κατά μήκος της θάλασσας",
+      "en": "The terrace at sunset, tables lined along the sea"
+    },
+    "venue-day/037": {
+      "el": "Στρωμένα τραπέζια στη βεράντα καθώς πέφτει το σούρουπο",
+      "en": "Set tables on the terrace as dusk falls"
+    },
+    "venue-day/011": {
+      "el": "Η εσωτερική σάλα με τα ψάθινα φωτιστικά και τη θάλασσα πίσω από τα τζάμια",
+      "en": "The dining room with rattan lamps and the sea behind the glass"
+    },
+    "venue-day/096": {
+      "el": "Η σάλα με τα λευκά τραπέζια και τους γυάλινους τοίχους προς τη θάλασσα",
+      "en": "The dining room with white tables and glass walls facing the sea"
+    },
+    "venue-day/106": {
+      "el": "Το μπλε πάτωμα της βεράντας κάτω από τη λευκή πέργκολα",
+      "en": "The blue terrace floor under the white pergola"
+    },
+    "venue-day/049": {
+      "el": "Γωνιά της σάλας με φούξια μαξιλάρια και διάτρητο λευκό τοίχο",
+      "en": "A corner of the dining room with fuchsia cushions and a white lattice wall"
+    },
+    "venue-day/098": {
+      "el": "Τραπέζια στο χρώμα της μέντας και ψάθινο φωτιστικό στην εσωτερική σάλα",
+      "en": "Mint tables and a rattan lamp in the dining room"
+    },
+    "venue-day/045": {
+      "el": "Η βεράντα με τις λευκές ομπρέλες πάνω από το νερό",
+      "en": "The terrace with white parasols above the water"
+    },
+    "venue-day/089": {
+      "el": "Το δρομάκι της εισόδου με την ταμπέλα και τις ζαρντινιέρες",
+      "en": "The entrance lane with the sign and window boxes"
+    },
+    "venue-day/107": {
+      "el": "Η ξύλινη ταμπέλα του Ναυαρίνου με το καραβάκι",
+      "en": "Navarino's wooden sign with its little ship"
+    },
+    "venue-day/064": {
+      "el": "Η παλιά κόκκινη ξύλινη βάρκα στα βότσαλα μπροστά στο εστιατόριο",
+      "en": "The old red wooden boat on the pebbles in front of the restaurant"
+    },
+    "venue-day/048": {
+      "el": "Μονοπάτι με λουλούδια δίπλα στην παραλία",
+      "en": "A flower-lined path beside the beach"
+    },
+    "venue-day/003": {
+      "el": "Η βεράντα στο σούρουπο, με τον ουρανό πορτοκαλί",
+      "en": "The terrace at dusk under an orange sky"
+    },
+    "venue-day/024": {
+      "el": "Γλάστρες στο πεζούλι, με τη θάλασσα και τα βουνά απέναντι",
+      "en": "Potted plants on the ledge, the sea and mountains beyond"
+    },
+    "venue-day/028": {
+      "el": "Γαλάζια θάλασσα κάτω από μια λευκή ομπρέλα",
+      "en": "Turquoise sea beneath a white parasol"
+    },
+    "venue-day/032": {
+      "el": "Η εσωτερική σάλα με τα κρεμαστά φωτιστικά",
+      "en": "The dining room with its hanging lamps"
+    },
+    "venue-day/046": {
+      "el": "Η βεράντα με λευκά τραπέζια και ομπρέλες δίπλα στο νερό",
+      "en": "The terrace with white tables and parasols by the water"
+    },
+    "venue-day/047": {
+      "el": "Γλάστρα με λουλούδια στο λευκό πεζούλι, με τη θάλασσα πίσω",
+      "en": "A flowerpot on the white ledge with the sea behind"
+    },
+    "venue-day/056": {
+      "el": "Η είσοδος με την ταμπέλα ανάμεσα στα πράσινα",
+      "en": "The entrance and its sign among the greenery"
+    },
+    "venue-day/057": {
+      "el": "Η πέργκολα με τα λευκά δοκάρια πάνω από τα τραπέζια",
+      "en": "The white-beamed pergola above the tables"
+    },
+    "venue-day/065": {
+      "el": "Λευκή πέργκολα με κλήμα στη βεράντα",
+      "en": "A white pergola with a vine on the terrace"
+    },
+    "venue-day/070": {
+      "el": "Η σάλα με τα λευκά τραπέζια και τα ψάθινα φωτιστικά",
+      "en": "The dining room with white tables and rattan lamps"
+    },
+    "venue-day/073": {
+      "el": "Ομπρέλες και τραπέζια στη βεράντα δίπλα στο νερό",
+      "en": "Parasols and tables on the terrace by the water"
+    },
+    "venue-day/075": {
+      "el": "Το μπλε πάτωμα και οι λευκές καρέκλες κατά μήκος της θάλασσας",
+      "en": "The blue floor and white chairs along the sea"
+    },
+    "venue-day/077": {
+      "el": "Μακρύ τραπέζι με γυάλινη επιφάνεια, στρωμένο για παρέα",
+      "en": "A long glass-topped table set for a group"
+    },
+    "venue-day/079": {
+      "el": "Κρεμαστή γλάστρα πάνω από τη θάλασσα και την παραλία",
+      "en": "A hanging planter above the sea and the beach"
+    },
+    "venue-day/085": {
+      "el": "Πορτοκαλί λουλούδια σε βάζο πάνω στον πάγκο",
+      "en": "Orange flowers in a vase on the counter"
+    },
+    "venue-day/090": {
+      "el": "Πήλινο πιθάρι δίπλα στην είσοδο",
+      "en": "A terracotta urn by the entrance"
+    },
+    "venue-day/094": {
+      "el": "Το εστιατόριο από την παραλία, με γλάστρες στα βότσαλα",
+      "en": "The restaurant seen from the beach, pots on the pebbles"
+    },
+    "venue-day/103": {
+      "el": "Ο μπλε διάδρομος της βεράντας προς τη θάλασσα",
+      "en": "The blue walkway of the terrace towards the sea"
+    },
+    "venue-day/108": {
+      "el": "Καθαρά νερά κάτω από τη βεράντα",
+      "en": "Clear water below the terrace"
+    },
+    "venue-day/110": {
+      "el": "Ζωγραφισμένο τραπέζι με φύκια και κοράλλια",
+      "en": "A hand-painted table of seaweed and coral"
+    },
+    "logo-art/118": {
+      "el": "Ακουαρέλα: ένα κορίτσι ξαπλωμένο σε βάρκα πάνω σε γαλαζοπράσινο νερό",
+      "en": "Watercolour: a girl lying in a rowing boat on teal water"
+    },
+    "owner/001": {
+      "el": "Γυάλινο τραπέζι με φθινοπωρινά φύλλα μπροστά στο φωτισμένο διάτρητο πάνελ με τα φύλλα",
+      "en": "A glass table with autumn leaves before the lit leaf-pattern screen"
+    },
+    "owner/003": {
+      "el": "Η βεράντα κάτω από την πέργκολα, με τα τζάμια ανοιχτά προς τη θάλασσα",
+      "en": "The terrace under the pergola, its glass doors open to the sea"
+    },
+    "owner/004": {
+      "el": "Ο λευκός δρόμος έξω από το Ναυαρίνο στον ήλιο",
+      "en": "The white lane outside Navarino in the sun"
+    },
+    "owner/005": {
+      "el": "Η σάλα με το διάτρητο πάνελ, τη βιβλιοθήκη-βάρκα και τη θάλασσα στα παράθυρα",
+      "en": "The dining room with the leaf screen, the boat bookcase and the sea in the windows"
+    },
+    "owner/006": {
+      "el": "Τραπέζι με βότσαλα και κοράλλια κάτω από το τζάμι, δίπλα στη θάλασσα",
+      "en": "A table with pebbles and coral under its glass top, beside the sea"
+    },
+    "owner/007": {
+      "el": "Η μεγάλη σάλα στο ηλιοβασίλεμα, με τον ήλιο να μπαίνει από τα τζάμια",
+      "en": "The long dining room at sunset, the sun pouring through the glass"
+    },
+    "owner/008": {
+      "el": "Freddo καπουτσίνο και γλάστρα στο πεζούλι της ταράτσας, με θέα τη θάλασσα",
+      "en": "A freddo cappuccino and a potted plant on the terrace ledge, facing the sea"
+    },
+    "owner/009": {
+      "el": "Η βεράντα το βράδυ, με τις ομπρέλες και τη θάλασσα πράσινη από τα φώτα",
+      "en": "The terrace in the evening, umbrellas up and the sea lit green"
+    },
+    "owner/010": {
+      "el": "Στρωμένα τραπέζια κάτω από τις ομπρέλες τη νύχτα, σε πράσινο φως",
+      "en": "Set tables under the umbrellas at night, in green light"
+    }
+  },
+  "gallery": [
+    "owner/007",
+    "venue-day/003",
+    "owner/003",
+    "night/031",
+    "owner/009",
+    "venue-day/024",
+    "owner/005",
+    "venue-day/075",
+    "owner/006",
+    "venue-day/110",
+    "owner/010",
+    "night/100",
+    "owner/001",
+    "venue-day/046",
+    "owner/004",
+    "venue-day/085",
+    "owner/008",
+    "venue-day/057",
+    "night/055",
+    "venue-day/028",
+    "venue-day/077",
+    "venue-day/090",
+    "venue-day/070",
+    "night/083",
+    "venue-day/103",
+    "venue-day/047",
+    "venue-day/065",
+    "venue-day/108",
+    "venue-day/032",
+    "venue-day/073",
+    "venue-day/079",
+    "venue-day/094",
+    "venue-day/056"
+  ]
+}

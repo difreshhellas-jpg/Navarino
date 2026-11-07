@@ -1,0 +1,31 @@
+{
+  "name": "navarino",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "images": "node scripts/images.mjs",
+    "build": "next build",
+    "serve": "npx --yes serve out -l 4173",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fontsource/manrope": "^5.2.5",
+    "@fontsource/mynerve": "^5.2.5",
+    "@fontsource/noto-serif-display": "^5.2.5",
+    "@phosphor-icons/react": "^2.1.10",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.25",
+    "next": "^15.5.25",
+    "ogl": "^1.0.11",
+    "react": "~19.2.0",
+    "react-dom": "~19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "sharp": "^0.34.0",
+    "typescript": "^5.7.3"
+  }
+}

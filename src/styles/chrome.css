@@ -1,0 +1,174 @@
+/* Chrome: preloader, header, overlay nav, footer, trail. Mobile first. */
+
+/* ---------- Preloader: sails ---------- */
+.preloader {
+  position: fixed; inset: 0; z-index: var(--z-preloader);
+  display: grid; place-items: center; pointer-events: all;
+  color: var(--on-night);
+}
+html[data-intro="skip"] .preloader, html:not(.js) .preloader { display: none; }
+.preloader__sails { position: absolute; inset: 0; display: flex; }
+.preloader__sail {
+  flex: 1; height: 100%; margin-right: -1px; background: var(--ink);
+  /* A billowing hem, so the columns read as sails being hoisted. */
+  border-radius: 0 0 50% 50% / 0 0 6% 6%;
+}
+.preloader__sail:nth-child(even) { background: color-mix(in srgb, var(--ink) 88%, var(--emerald)); }
+.preloader__inner {
+  position: relative; z-index: 1; width: min(78vw, 30rem);
+  display: grid; justify-items: center; gap: 2.25rem;
+}
+.preloader__word {
+  font-family: var(--font-display); font-weight: 300; font-style: italic;
+  font-size: clamp(2.4rem, 1.6rem + 4vw, 4.5rem); line-height: 1.1; letter-spacing: -0.01em;
+}
+.preloader__line { position: relative; width: 100%; height: 1px; background: color-mix(in srgb, var(--on-night) 22%, transparent); }
+.preloader__fill {
+  position: absolute; inset: 0; background: var(--sea-glow);
+  transform-origin: left; transform: scaleX(0);
+}
+.preloader__boat {
+  position: absolute; left: 0; bottom: 0; width: 56px; height: 56px;
+  margin-left: -28px; margin-bottom: 2px; border-radius: 50%;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 0.35);
+  transform-origin: 50% 100%;
+}
+
+/* ---------- Header ---------- */
+.hdr {
+  position: fixed; inset: 0 0 auto; z-index: var(--z-header);
+  height: var(--header-h);
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 0 var(--gutter);
+  color: var(--fx-fg);
+  transition: background-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out);
+}
+.hdr.is-scrolled {
+  background: color-mix(in srgb, var(--fx-bg) 78%, transparent);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  backdrop-filter: blur(14px) saturate(1.3);
+  box-shadow: 0 1px 0 var(--fx-line);
+}
+.hdr__brand { display: inline-flex; align-items: center; gap: 0.75rem; text-decoration: none; min-height: 48px; }
+.badge { border-radius: 50%; box-shadow: 0 2px 10px rgb(0 0 0 / 0.18); }
+.hdr__word { font-family: var(--font-display); font-size: 1.35rem; font-weight: 300; letter-spacing: 0.01em; }
+.hdr__actions { display: flex; align-items: center; gap: 0.5rem; }
+.hdr__lang {
+  display: inline-grid; place-items: center; min-width: 48px; min-height: 48px;
+  border-radius: 999px; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.08em; text-decoration: none;
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) { .hdr__lang:hover { background: color-mix(in srgb, var(--fx-fg) 10%, transparent); } }
+
+/* On a phone the CTA is a round phone button (labelled for screen readers);
+   from 640px it shows its words. */
+.hdr__book { min-width: 48px; padding: 0.75em; font-size: 1.125rem; }
+.hdr__book .btn__label { display: none; }
+@media (min-width: 640px) {
+  .hdr__book { padding: 0.7em 1.4em; }
+  .hdr__book .btn__label { display: inline-block; }
+}
+
+.burger {
+  position: relative; z-index: calc(var(--z-nav) + 1);
+  width: 48px; height: 48px; border-radius: 50%;
+  border: 1px solid color-mix(in srgb, currentColor 35%, transparent);
+  background: transparent; color: inherit; cursor: pointer;
+  display: grid; place-items: center;
+}
+.burger > span:not(.sr-only) {
+  position: absolute; width: 18px; height: 1.5px; background: currentColor;
+  transition: transform var(--dur) var(--ease-in-out);
+}
+.burger > span:nth-child(1) { transform: translateY(-3.5px); }
+.burger > span:nth-child(2) { transform: translateY(3.5px); }
+.burger[aria-expanded="true"] > span:nth-child(1) { transform: rotate(45deg); }
+.burger[aria-expanded="true"] > span:nth-child(2) { transform: rotate(-45deg); }
+html.nav-open .hdr { color: var(--on-night); background: transparent; box-shadow: none; backdrop-filter: none; z-index: calc(var(--z-nav) + 1); }
+
+/* ---------- Overlay nav ---------- */
+.nav {
+  position: fixed; inset: 0; z-index: var(--z-nav); visibility: hidden;
+  color: var(--on-night); overflow-y: auto; overscroll-behavior: contain;
+}
+.nav__bg { position: absolute; inset: 0; background: var(--emerald); z-index: -1; }
+.nav__bg::after {
+  content: ""; position: absolute; inset: 0; opacity: 0.5;
+  background: radial-gradient(120% 70% at 80% 110%, color-mix(in srgb, var(--sea-glow) 35%, transparent), transparent 60%);
+}
+.nav__grid {
+  content-visibility: auto; contain-intrinsic-size: auto 100svh;
+  min-height: 100%; display: grid; align-content: center; gap: 2.5rem;
+  padding-top: calc(var(--header-h) + 2rem); padding-bottom: 3rem;
+}
+.nav__links { display: grid; gap: 0.1rem; }
+.nav__link { overflow: hidden; padding-block: 0.06em; }
+.nav__link > a {
+  display: inline-block; text-decoration: none;
+  font-family: var(--font-display); font-weight: 300;
+  font-size: clamp(2.2rem, 1.4rem + 4.6vw, 5.4rem); line-height: 1.12;
+  transition: opacity var(--dur) var(--ease-out), transform var(--dur) var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .nav__links:hover .nav__link > a { opacity: 0.4; }
+  .nav__links .nav__link > a:hover { opacity: 1; transform: translateX(0.12em); }
+}
+.nav__links .nav__link > a:focus-visible { opacity: 1; }
+.nav__preview { display: none; }
+.nav__meta { display: flex; flex-wrap: wrap; gap: 0.75rem 2rem; font-size: var(--step--1); color: var(--on-night-muted); }
+.nav__meta a { color: var(--on-night); min-height: 44px; display: inline-flex; align-items: center; }
+@media (min-width: 900px) {
+  .nav__grid { grid-template-columns: 1.3fr 1fr; align-items: center; column-gap: 5vw; }
+  .nav__preview {
+    display: block; position: relative; aspect-ratio: 4 / 5; max-height: 68svh;
+    border-radius: 999px 999px var(--fx-radius) var(--fx-radius); overflow: hidden;
+  }
+  .nav__preview > * { position: absolute; inset: 0; clip-path: inset(100% 0 0 0); }
+  .nav__preview img { width: 100%; height: 100%; object-fit: cover; }
+  .nav__meta { grid-column: 1 / -1; }
+}
+
+/* ---------- Page + footer reveal ---------- */
+.page { position: relative; z-index: var(--z-content); background: var(--fx-bg); }
+html:not(.js) .page { background: transparent; }
+.ftr {
+  /* Normal flow, not sticky. A sticky footer sits behind the page from the
+     first paint: Lighthouse took its photo as the LCP and every height change
+     during load as a 0.95 layout shift. The drawer feel now comes from the
+     inner parallax in reveals.ts. */
+  position: relative; z-index: 0;
+  min-height: min(100svh, 46rem);
+  display: flex; align-items: flex-end; overflow: hidden;
+  background: var(--ink); color: var(--on-night);
+}
+.ftr__bg { position: absolute; inset: 0; }
+.ftr__bg img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; opacity: 0.55; }
+.ftr::before {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, rgb(8 25 26 / 0.15) 0%, rgb(8 25 26 / 0.7) 45%, var(--ink) 92%);
+}
+.ftr__inner { position: relative; z-index: 2; padding-block: calc(var(--section) * 0.7) 1.5rem; }
+.ftr__signoff {
+  font-size: clamp(2.4rem, 1rem + 6.5vw, 7.5rem); font-style: italic; line-height: 1.05;
+  color: var(--moon-halo); margin-bottom: clamp(2rem, 6vw, 5rem);
+}
+.ftr__cols { display: grid; gap: 2.5rem; }
+.ftr__brand { display: inline-flex; align-items: center; gap: 1rem; text-decoration: none; font-size: 1.8rem; }
+.ftr__facts { display: grid; gap: 1.25rem; }
+.ftr__facts dt { display: flex; align-items: center; gap: 0.5em; font-size: var(--step--1); color: var(--on-night-muted); font-weight: 600; letter-spacing: 0.04em; }
+.ftr__facts dd { margin: 0.2rem 0 0; }
+.ftr__links { display: flex; flex-wrap: wrap; gap: 0.75rem; align-content: flex-start; }
+.ftr__base {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem 2rem;
+  margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgb(246 244 238 / 0.18);
+  font-size: var(--step--1); color: var(--on-night-muted);
+}
+.ftr__base a { color: var(--on-night); min-height: 44px; display: inline-flex; align-items: center; }
+@media (min-width: 900px) {
+  .ftr__cols { grid-template-columns: 1fr 1.2fr auto; align-items: start; }
+}
+
+/* ---------- Ribbon trail canvas ---------- */
+.trail { position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: var(--z-trail); mix-blend-mode: multiply; }
+html.is-night .trail { mix-blend-mode: screen; }
+html.is-touch .trail { display: none; }

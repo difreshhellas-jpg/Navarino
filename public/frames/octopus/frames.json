@@ -1,0 +1,13 @@
+{
+  "count": 119,
+  "pad": 4,
+  "formats": [
+    "avif",
+    "webp"
+  ],
+  "aspect": 1.7778,
+  "mobile": {
+    "count": 119,
+    "aspect": 0.5625
+  }
+}

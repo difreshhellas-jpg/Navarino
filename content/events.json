@@ -1,0 +1,4 @@
+{
+  "_note": "Navarino Live nights. Add one object per event and rebuild; past dates are hidden automatically at build time. Example: { \"date\": \"2026-08-23\", \"time\": \"21:30\", \"el\": { \"title\": \"…\", \"detail\": \"…\" }, \"en\": { \"title\": \"…\", \"detail\": \"…\" } }",
+  "items": []
+}

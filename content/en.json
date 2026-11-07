@@ -1,0 +1,162 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Navarino · Restaurant & Café on the beach in Xylokastro",
+    "description": "A beachfront restaurant and all-day café at Patron 108, Xylokastro. Coffee and brunch in the morning, Greek home cooking, grill and seafood late into the evening.",
+    "menuTitle": "Menu · Navarino Xylokastro",
+    "menuDescription": "Navarino's menu: coffee and brunch, home-cooked dishes, grill and seafood, desserts."
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "openNav": "Open navigation menu",
+    "closeNav": "Close navigation menu",
+    "langSwitch": "ΕΛ",
+    "langSwitchLabel": "Διαβάστε τη σελίδα στα ελληνικά",
+    "home": "Home",
+    "book": "Book a table",
+    "bookLabel": "Book a table: call +30 27430 28887",
+    "call": "Call",
+    "menu": "Menu",
+    "fullMenu": "Full menu",
+    "directions": "Directions",
+    "googleMaps": "Google Maps",
+    "appleMaps": "Apple Maps",
+    "facebook": "Facebook",
+    "close": "Close",
+    "prev": "Previous photo",
+    "next": "Next photo",
+    "photoOf": "Photo {n} of {total}",
+    "readOnTripadvisor": "All reviews on TripAdvisor",
+    "backToTop": "Back to top",
+    "loading": "Loading"
+  },
+  "nav": [
+    { "id": "morning", "label": "Morning", "preview": "drinks/126" },
+    { "id": "kitchen", "label": "Kitchen", "preview": "food/027" },
+    { "id": "menu", "label": "Menu", "href": "menu", "preview": "food/066" },
+    { "id": "house", "label": "The house", "preview": "venue-day/106" },
+    { "id": "story", "label": "Our story", "preview": "venue-day/064" },
+    { "id": "evening", "label": "Evenings & Live", "preview": "night/124" },
+    { "id": "visit", "label": "Visit", "preview": "night/127" }
+  ],
+  "hero": {
+    "kicker": "restaurant • café — tastes of Greece",
+    "title": "Navarino",
+    "titleNative": "Ναυαρίνο",
+    "slogan": "sea · taste · hospitality",
+    "place": "On the beach at Xylokastro"
+  },
+  "marquee": ["θάλασσα", "γεύση", "φιλοξενία", "sea", "taste", "hospitality"],
+  "morning": {
+    "time": "09:30",
+    "title": "Mornings on the water",
+    "body": "The first freddo of the day on the ledge, next to the pot of basil. The sea is still calm and the blue floor still cool. From early on we serve coffee, brunch and sweet crêpes, for anyone who likes the day to start slowly.",
+    "note": "coffee & brunch from 09:30"
+  },
+  "day": {
+    "title": "A day by the sea",
+    "intro": "From the first coffee to the last glass, Navarino changes colour with the gulf.",
+    "panels": [
+      { "time": "09:30", "title": "First coffee", "text": "Freddo, basil and still water." },
+      { "time": "13:00", "title": "Midday by the water", "text": "A swim, a plate, the whole gulf in front of you." },
+      { "time": "19:30", "title": "Sunset", "text": "The sky over the Corinthian Gulf turns orange." },
+      { "time": "21:30", "title": "The lights come on", "text": "Tables are set and the sea turns green." }
+    ]
+  },
+  "daily": {
+    "label": "Dish of the day",
+    "hint": "Ask us what else was cooked today"
+  },
+  "kitchen": {
+    "eyebrow": "The kitchen",
+    "title": "What the sea brings, what the grill fires",
+    "body": "Home cooking with the patience of the pot, charcoal for the octopus and the meats, fresh seafood and seasonal vegetables. Tastes of Greece, the way they taste at a family table.",
+    "dishTitle": "Charcoal-grilled octopus with fava",
+    "dishCaption": "Grilled over charcoal, with fava and lemon.",
+    "signatureTitle": "From our kitchen",
+    "dishes": [
+      { "photo": "food/066", "name": "Shrimp orzo" },
+      { "photo": "food/026", "name": "Shrimp pasta" },
+      { "photo": "food/025", "name": "Gemista, stuffed vegetables" },
+      { "photo": "food/092", "name": "Oven-roast lamb with potatoes" },
+      { "photo": "food/125", "name": "Grilled liver" },
+      { "photo": "food/132", "name": "Tomato salad" }
+    ],
+    "passCaption": "On the pass, moments before they reach the terrace.",
+    "labels": {
+      "octopus": "charcoal octopus",
+      "fava": "fava purée",
+      "lemon": "lemon",
+      "onion": "onion",
+      "capers": "capers",
+      "oil": "olive oil",
+      "oregano": "oregano"
+    }
+  },
+  "menuTeaser": {
+    "eyebrow": "Menu",
+    "title": "From morning until late",
+    "body": "Coffee and brunch, dishes of the day, grill, seafood and desserts.",
+    "cta": "See the full menu"
+  },
+  "house": {
+    "eyebrow": "The house",
+    "title": "A white house with a blue floor",
+    "body": "Whitewashed walls, white pergolas and a floor painted the blue of the Aegean. Inside, mint-green wooden tables, fuchsia cushions and rattan lamps. Glass walls all around, so the sea is never out of sight."
+  },
+  "story": {
+    "eyebrow": "Our story",
+    "title": "A name from the sea",
+    "body": "On 20 October 1827, in the bay of Navarino at Pylos, the fleets of Britain, France and Russia defeated the Ottoman-Egyptian fleet. The battle opened the way to Greek independence. Almost two hundred years later the name is still travelling, all the way here, to a house on the water.",
+    "highlight": "a house on the water",
+    "boatCaption": "The old boat, on the pebbles in front of us.",
+    "ownerTodo": "TODO: The owners' details and their own story. To be supplied by the client only."
+  },
+  "evening": {
+    "eyebrow": "Evenings",
+    "title": "When the sea turns emerald",
+    "body": "At dusk the lights beneath the water come on and the bay in front of us glows green. A little later, the moon rises over the Corinthian Gulf.",
+    "liveTitle": "Navarino Live",
+    "liveBody": "Live music nights, right by the water.",
+    "eventsEmpty": "Follow us on Facebook for the next nights",
+    "eventsEmptyCta": "Navarino on Facebook"
+  },
+  "reviews": {
+    "eyebrow": "Reviews",
+    "title": "What our guests write",
+    "ratingLabel": "rating on TripAdvisor",
+    "countLabel": "reviews on TripAdvisor",
+    "outOf": "out of 5"
+  },
+  "gallery": {
+    "eyebrow": "Moments",
+    "title": "Days and nights at Navarino",
+    "open": "Enlarge photo"
+  },
+  "visit": {
+    "eyebrow": "Visit",
+    "title": "We'll be expecting you",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "hoursLabel": "Opening hours",
+    "hours": "Daily {opens} – {closes}",
+    "socialLabel": "Follow us"
+  },
+  "footer": {
+    "signoff": "sea · taste · hospitality",
+    "rights": "Navarino, Xylokastro"
+  },
+  "menuPage": {
+    "eyebrow": "Menu",
+    "title": "Our menu",
+    "intro": "Dishes change with the season and the day's catch. Ask us about the dish of the day.",
+    "tabsLabel": "Menu categories",
+    "priceNote": "Prices coming soon."
+  },
+  "notFound": {
+    "title": "The boat drifted off",
+    "body": "The page you are looking for doesn't exist. Come back to shore.",
+    "cta": "Back to the home page"
+  },
+  "preloader": { "label": "Navarino is loading" }
+}
