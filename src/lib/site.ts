@@ -18,6 +18,7 @@ export function upcomingEvents(): EventItem[] {
   return (events.items as EventItem[]).filter((e) => e.date >= today).sort((a, b) => a.date.localeCompare(b.date));
 }
 
-/** The canonical origin. No domain has been given yet (README TODO), so URLs
-    in sitemap/OG/hreflang use this placeholder until SITE_URL is set at build. */
-export const SITE_URL = (process.env.SITE_URL ?? "https://example.com").replace(/\/$/, "");
+/** The canonical origin, used in canonical links, hreflang, the sitemap and
+    Open Graph. The bare domain redirects to www, so www is the canonical one.
+    SITE_URL at build overrides it (e.g. for a staging copy). */
+export const SITE_URL = (process.env.SITE_URL || "https://www.navarino-xylokastro.com").replace(/\/$/, "");
